@@ -17,7 +17,17 @@ class ViewController: UIViewController {
     }
     
     @IBAction func saveButtonTapped(_ sender: UIBarButtonItem) {
-        print("Ta")
+        // Removing red lines
+        view.endEditing(true)
+        let myText = textview.text!
+        textview.text = ""
+        textview.text = myText
+
+        let screenshot = textview.takeScreenshot()
+        //Delete after add save in Galerria feature, now use it for testing
+        let vc = Phot()
+        vc.imageView.image = screenshot
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 
