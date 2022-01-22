@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C04F23F279BF94200B2409A /* Phot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C04F23E279BF94200B2409A /* Phot.swift */; };
 		4C04F241279BFB5300B2409A /* UIView_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C04F240279BFB5300B2409A /* UIView_Extension.swift */; };
 		4CEA3941279BB763007E8A2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEA3940279BB763007E8A2E /* AppDelegate.swift */; };
 		4CEA3943279BB763007E8A2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEA3942279BB763007E8A2E /* SceneDelegate.swift */; };
@@ -18,7 +17,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4C04F23E279BF94200B2409A /* Phot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Phot.swift; sourceTree = "<group>"; };
 		4C04F240279BFB5300B2409A /* UIView_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView_Extension.swift; sourceTree = "<group>"; };
 		4CEA393D279BB763007E8A2E /* Instatext_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instatext_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CEA3940279BB763007E8A2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,7 +61,6 @@
 				4CEA3940279BB763007E8A2E /* AppDelegate.swift */,
 				4CEA3942279BB763007E8A2E /* SceneDelegate.swift */,
 				4CEA3944279BB763007E8A2E /* ViewController.swift */,
-				4C04F23E279BF94200B2409A /* Phot.swift */,
 				4CEA3949279BB76A007E8A2E /* Assets.xcassets */,
 				4CEA3946279BB763007E8A2E /* Main.storyboard */,
 				4CEA394B279BB76A007E8A2E /* LaunchScreen.storyboard */,
@@ -144,7 +141,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C04F23F279BF94200B2409A /* Phot.swift in Sources */,
 				4CEA3945279BB763007E8A2E /* ViewController.swift in Sources */,
 				4CEA3941279BB763007E8A2E /* AppDelegate.swift in Sources */,
 				4C04F241279BFB5300B2409A /* UIView_Extension.swift in Sources */,
@@ -300,6 +296,7 @@
 				DEVELOPMENT_TEAM = 4C3GNH695T;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Instatext_Test/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Please give me accese to Photos, need to save a photo!";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -330,6 +327,7 @@
 				DEVELOPMENT_TEAM = 4C3GNH695T;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Instatext_Test/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "Please give me accese to Photos, need to save a photo!";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
