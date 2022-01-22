@@ -22,12 +22,24 @@ class ViewController: UIViewController {
         let myText = textview.text!
         textview.text = ""
         textview.text = myText
-
+        
         let screenshot = textview.takeScreenshot()
-        //Delete after add save in Galerria feature, now use it for testing
-        let vc = Phot()
-        vc.imageView.image = screenshot
-        navigationController?.pushViewController(vc, animated: true)
+        textview.text = ""
+        saveButton.isEnabled = false
+        
+        UIImageWriteToSavedPhotosAlbum(screenshot, self, #selector(image(_: didFinishavingWithError: contextInfo:)), nil)
+    }
+    
+    @objc private func image(_ image: UIImage, didFinishavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
+        if let error = error {
+            let ac = UIAlertController(title: "Ошибка", message: error.localizedDescription, preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "OK", style: .default))
+            present(ac, animated: true)
+        } else {
+            let ac = UIAlertController(title: "Сохранено!", message: "Ваша картинка сохранена", preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "OK", style: .default))
+            present(ac, animated: true)
+        }
     }
 }
 
