@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="dsfd" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6rB-1s-zSY">
-                                <rect key="frame" x="48" y="196" width="318" height="318"/>
+                                <rect key="frame" x="48" y="176" width="318" height="318"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="318" id="ZLV-o6-YUo"/>
@@ -36,7 +36,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6rB-1s-zSY" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="3RW-YL-y7P"/>
-                            <constraint firstItem="6rB-1s-zSY" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-120" id="phB-n4-aJJ"/>
+                            <constraint firstItem="6rB-1s-zSY" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-140" id="phB-n4-aJJ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ATP-df-JwE">
